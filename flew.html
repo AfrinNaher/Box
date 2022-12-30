@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box 3</title>
+
+    <style>
+         .box-1{
+            border: 2px solid black;
+            color: white;
+            background-color: blue;
+            height: 150px;
+            width: 300px;
+            margin: 10px;
+            
+        }
+
+        .box-2{
+            border: 2px solid black;
+            color: white;
+            background-color: red;
+            height: 100px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .box-3{
+            border: 2px solid black;
+            color: white;
+            background-color: green;
+            height: 200px;
+            width: 100px;
+            margin: 10px;
+        }
+        .flew-container{
+            display: flex;
+            width: 100;
+            border: 1px solid black;
+        }
+
+        .reverse{
+            flex-direction: row-reverse;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .jc-right{
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="flew-container">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <div class="flew-container reverse">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <div class="flew-container column">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+
+    <div class="flew-container jc-right">
+        <div class="box-1">1</div>
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+    </div>
+</body>
+</html>
